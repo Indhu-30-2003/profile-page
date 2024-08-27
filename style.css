@@ -216,15 +216,9 @@ display:none;
     
 
 }
-.project_iframe{
-    padding:10px;
-    width:500px;
-    height: 300px;
-    border:2px solid   rgb(227, 12, 112);;
-    background: white;
-    border-radius: 20px;
+
     
-}
+
 .project_img{
     padding:10px;
     width:500px;
@@ -232,8 +226,8 @@ display:none;
     border:2px solid   rgb(227, 12, 112);;
     background: white;
     border-radius: 20px;
-    
-    display:none;
+    opacity:0.9;
+    display:block;
 }
 .project_heading{
     margin-top: 20px;
@@ -346,9 +340,8 @@ button:hover{
        
        width:500px;
     }
-    .project_iframe{
-        width:500px; 
-    }
+    
+    
     .contact{
         width:500px;
     }
@@ -391,10 +384,7 @@ button:hover{
         margin-top: 10px;
        width:300px;
     }
-    .project_iframe{
-        width:350px; 
-        display: none;
-    }
+   
     .project_img{
         display: block;
         width:300px; 
