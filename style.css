@@ -6,6 +6,21 @@
     font-weight: 400;
     font-style: normal;
 }
+@keyframes appear{
+    from{
+        opacity: 0;
+        scale:0.5;
+    }
+    to{
+        opacity:1;
+        scale:1;
+    }
+}
+.header , .home ,.about_me,.skill_container,.project_heading ,.contact {
+    animation:appear linear;
+    animation-timeline:view();
+    animation-range:entry 0% cover 30%;
+}
 body{
     color:white;
     background-color: black;
@@ -22,7 +37,7 @@ body{
     align-items: center;
     background-color: black;
     z-index:100;
-    padding:20px;
+    padding:10px;
     
     
 }
@@ -50,12 +65,13 @@ body{
     
 }
 .bottom_header{
- margin-top: 80px;
+ 
  cursor: pointer;
  display: none;
  position: sticky;
- top:80px;
+ 
  background-color: black;
+ z-index: 10;
 }
 .navbar2 a{
     display:inline-block;
@@ -63,7 +79,8 @@ body{
     color:white;
     text-decoration:none;
     font-weight: 500;
-    margin-left:20px;
+    margin-left: 10px;
+   
     
    
 }
@@ -164,7 +181,7 @@ display:none;
 } 
 
 .about_me{
-    margin-top: 20px;
+    
     padding:40px;
 }
 .about_me h2{
@@ -186,11 +203,11 @@ display:none;
     font-size: 20px;
 }
 .projects{
-    margin-top:40px;
-    padding:30px;
+    
+    margin-top: 20px;
     display:flex;
     flex-wrap: wrap;
-    gap:30px;
+    gap:20px;
     justify-content: space-around;
 
 }
@@ -206,7 +223,17 @@ display:none;
     border:2px solid   rgb(227, 12, 112);;
     background: white;
     border-radius: 20px;
-    opacity: 0.8;
+    
+}
+.project_img{
+    padding:10px;
+    width:500px;
+    height: 300px;
+    border:2px solid   rgb(227, 12, 112);;
+    background: white;
+    border-radius: 20px;
+    
+    display:none;
 }
 .project_heading{
     margin-top: 20px;
@@ -232,7 +259,61 @@ display:none;
     
 
 }
+.contact{
+    margin-bottom: 20px;
+}
+.contact_heading{
+    margin-top: 20px;
+    color : rgb(227, 12, 112);
+    font-weight: 700;
+    padding-left:30px;
+    padding-top: 20px;
+}
+.form{
+    
+    text-align: center;
+   
+}
+table{
 
+    border:2px solid rgb(227, 12, 112);
+    padding:10px;
+    font-size: 20px;
+    border-radius: 20px;
+}
+tr,td{
+    padding: 10px;
+}
+.form_container{
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    width:600px;
+}
+input{
+    width:400px;
+    padding:10px;
+    border-radius: 20px;
+    border: none;
+    outline:none;
+}
+input:focus{
+    outline: 2px solid rgb(227, 12, 112);
+    color: white;;
+}
+button{
+    padding:10px;
+    border-radius: 10px;
+    background-color: rgb(227, 12, 112);
+    color: white;
+    outline: none;
+    border: none;
+
+}
+button:hover{
+    border:2px solid rgb(227, 12, 112);
+    color: white;
+}
 
 @media only screen and (max-width:700px){
     .navbar{
@@ -242,8 +323,13 @@ display:none;
         display:none;
     }
     .bottom_header{
+        
         display:block;
+        z-index: 30;
+       
+        float: left;
     }
+    
     .home{
         margin-top: 0px;
         display: flex;
@@ -253,30 +339,46 @@ display:none;
         align-items: center;
     }
     .projects{
-        padding:10px;
+        
         box-sizing: border-box;
     }
     .project1{
-        margin-top: 20px;
-       width:400px;
+       
+       width:500px;
     }
     .project_iframe{
-        width:400px; 
+        width:500px; 
+    }
+    .contact{
+        width:500px;
+    }
+    .form_container{
+        width:450px;
+    }
+    input{
+        width:300px;
     }
 
 }
 @media only screen and (max-width:500px){
     .body{
-        font-size: 10px;
+        font-size: 8px;
+    }
+    .header{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
     }
     .navbar{
         display:none;
+        padding-left: 0;
     }
     #menu{
-        display:block;
+        display:none;
     }
     .bottom_header{
-        display:none;
+        display:block;
+        font-size: 6px;
     }
     .home{
         margin-top: 20px;
@@ -286,11 +388,34 @@ display:none;
         box-sizing: border-box;
     }
     .project1{
-        margin-top: 20px;
+        margin-top: 10px;
        width:300px;
     }
     .project_iframe{
-        width:300px; 
+        width:350px; 
+        display: none;
     }
+    .project_img{
+        display: block;
+        width:300px; 
+        height: 200px;
+        margin-bottom: 20px;
+
+    }
+    .contact{
+        width:300px;
+        
+    }
+    .form_container{
+        width:300px;
+        padding:10px;
+        box-sizing: border-box;
+       
+    }
+    input{
+        width:200px;
+    }
+   
+
 
 }

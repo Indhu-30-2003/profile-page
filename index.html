@@ -26,20 +26,20 @@
             <a href="#aboutme">About</a>
             <a href="#skill1">Skill</a>
             <a href="#proj1">Project</a>
-            <a href="#">Contact</a>
+            <a href="#contact1">Contact</a>
         </nav>
         <i class="fa-solid fa-bars" style="color:white;" id="menu"></i>
-
+        <div class="bottom_header">
+            <nav class="navbar2">
+                <a href="#">Home</a>
+                <a href="#aboutme">About</a>
+                <a href="#skill1">Skill</a>
+                <a href="#proj1">Project</a>
+                <a href="#contact1">Contact</a>
+            </nav>
+        </div>
     </header>
-    <div class="bottom_header">
-        <nav class="navbar2">
-            <a href="#">Home</a>
-            <a href="#aboutme">About</a>
-            <a href="#skill1">Skill</a>
-            <a href="#proj1">Project</a>
-            <a href="#">Contact</a>
-        </nav>
-    </div>
+   
     <section class="home">
         <div class="home-content">
             <h3>Hello, It's Me</h3>
@@ -57,10 +57,10 @@
 
     </section>
     <!--horizontal line-->
-    <div class="hr"></div>
+    <div class="hr" ></div><br>
     <!--About me-->
-    <div class="about_me" id="aboutme">
-        <h2>About Me</h2>
+    <div class="about_me" id="aboutme" >
+        <h2 >About Me</h2>
         <p>Hello! I'm Indhu, a passionate web developer with a keen interest in creating user-friendly and responsive
             websites. My journey into web development began with a curiosity about how the web works, and it quickly
             grew into a deep-seated passion. <br><br>Over time, I've honed my skills in HTML, CSS, JavaScript, and
@@ -103,6 +103,7 @@
        <div class="projects">
         <div class="project1">
             <iframe src="https://indhu-30-2003.github.io/TRIPADVISOR/" class="project_iframe"></iframe>
+            <img src="tripadvisor.png" class="project_img">
             <a href="https://indhu-30-2003.github.io/TRIPADVISOR/">
                 <h3>TripAdvisor Project</h3>
             </a><br>
@@ -111,6 +112,7 @@
         </div>
         <div class="project1">
             <iframe src="https://indhu-30-2003.github.io/udemy.github.io/" class="project_iframe"></iframe>
+            <img src="udemy.png" class="project_img">
             <a href="https://indhu-30-2003.github.io/udemy.github.io/">
                 <h3>Udemy clone Project</h3>
             </a><br>
@@ -120,6 +122,7 @@
     
     <div class="project1">
         <iframe src=" https://indhu-30-2003.github.io/formvalidation/" class="project_iframe"></iframe>
+        <img src="registration form.png" class="project_img">
         <a href=" https://indhu-30-2003.github.io/formvalidation/">
             <h3>Form validation Project</h3>
         </a><br>
@@ -130,6 +133,7 @@
     </div>
     <div class="project1">
         <iframe src=" https://indhu-30-2003.github.io/greenden-tailwind/" class="project_iframe"></iframe>
+        <img src="greenden.png" class="project_img">
         <a href=" https://indhu-30-2003.github.io/greenden-tailwind/">
             <h3>Greenden Project</h3>
         </a><br>
@@ -140,6 +144,7 @@
     </div>
     <div class="project1">
         <iframe src="  https://indhu-30-2003.github.io/textareacounter/" class="project_iframe"></iframe>
+        <img src="textarea.png" class="project_img">
         <a href="  https://indhu-30-2003.github.io/textareacounter/">
             <h3>TextCounter Project</h3>
         </a><br>
@@ -149,6 +154,7 @@
     </div>
     <div class="project1">
         <iframe src="   https://indhu-30-2003.github.io/profile-card/" class="project_iframe"></iframe>
+        <img src="profilecard.png" class="project_img">
         <a href="   https://indhu-30-2003.github.io/profile-card/">
             <h3>Profile Card Project</h3>
         </a><br>
@@ -157,6 +163,33 @@
             fun challenge to bring the design to life while ensuring that it remains functional and visually appealing
             on any screen size.</p>
     </div>
+    </div>
+    <!--horizontal line-->
+    <div class="hr"></div>
+    <!--contactform-->
+    <div class="contact" id="contact1">
+        <h2 class="contact_heading">Contact US</h2>
+        <div class="form_container">
+            <form class="form">
+                <table>
+                    <tr>
+                        <td>Name</td>
+                        <td><input type="text" placeholder="Enter Your Name"></td>
+                    </tr>
+                    <tr>
+                        <td>Email</td>
+                        <td><input type="email" placeholder="Enter Your Email"></td>
+                    </tr>
+                    <tr>
+                        <td>Message</td>
+                        <td><input type="text" placeholder="Enter Your Message"></td>
+                    </tr>
+                    <tr>
+                        <td><button >Submit</button></td>
+                    </tr>
+                </table>
+            </form>
+        </div>
     </div>
 </body>
 
